@@ -11,7 +11,7 @@ body {
   font-size: 20px;
   line-height: 30px;
   color: $tundora;
-  background: white;
+  background: $gallery;
 }
 
 * {
@@ -46,20 +46,14 @@ p {
   display: none;
 }
 
-@media screen and (max-width: $xl) {
-  .container-big {
-    width: 768px;
-  }
-}
-
-@media screen and (max-width: $md) {
-  .container-big {
-    padding: 0 30px;
-    width: 320px;
-  }
-}
-
 .container {
   margin: 0 auto;
-  width: 1200px;
+  padding: 0 15px;
+  max-width: 1160px;
+}
+.main {
+  position: relative;
+  padding: 50px;
+  background: white;
+  z-index: 1;
 }
