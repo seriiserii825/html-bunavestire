@@ -14,6 +14,9 @@ $(function () {
 		$('#js-open').show(20);
 		$('#js-search').css('width', '10%');
 	});
+	$('#js-toggle-menu').on('click', function () {
+		$('#js-main-menu').slideToggle();
+	});
 });
 
 
