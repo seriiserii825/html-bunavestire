@@ -9,33 +9,49 @@
 	height: $number;
 }
 
-@mixin placeholder-input($color) {
+@mixin placeholder-input($color, $textAlign) {
+	&[type='search']::-webkit-input-placeholder,
 	&[type='text']::-webkit-input-placeholder,
 	&[type='email']::-webkit-input-placeholder,
 	&[type='phone']::-webkit-input-placeholder{
 		color: $color;
+		text-align: $textAlign;
+		font-size: 20px;
+		font-weight: bold;
 	}
 
+	&[type='search']::-moz-placeholder,
 	&[type='text']::-moz-placeholder,
 	&[type='email']::-moz-placeholder,
 	&[type='phone']::-moz-placeholder{
 		color: $color;
+		text-align: $textAlign;
+		font-size: 20px;
+		font-weight: bold;
 	}
 
 	/* webkit */
 
+	&[type='search']:-moz-placeholder,
 	&[type='text']:-moz-placeholder,
 	&[type='email']:-moz-placeholder,
 	&[type='phone']:-moz-placeholder{
 		color: $color;
+		text-align: $textAlign;
+		font-size: 20px;
+		font-weight: bold;
 	}
 
 	/* webkit */
 
+	&[type='search']:-ms-input-placeholder,
 	&[type='text']:-ms-input-placeholder,
 	&[type='email']:-ms-input-placeholder,
 	&[type='phone']:-ms-input-placeholder{
 		color: $color;
+		text-align: $textAlign;
+		font-size: 20px;
+		font-weight: bold;
 	}
 
 }
