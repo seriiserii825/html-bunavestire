@@ -1,14 +1,17 @@
 $(function () {
 	$('#js-open').on('click', function () {
-		$('#js-search input').fadeIn();
-		$(this).fadeOut(10);
-		$('#js-close').fadeIn(200);
-		$('#js-search').css('width', '100%');
+		$('#js-search input').show();
+		$(this).hide(10);
+		$('#js-close').show(20);
+		$('#js-search').css('width', '90%');
 	});
 	$('#js-close').on('click', function () {
-		$('#js-search input').fadeOut();
-		$(this).fadeOut(10);
-		$('#js-open').fadeIn(200);
+		$('#js-search input').hide();
+		$(this).hide(10);
+		setTimeout(function () {
+			$('#js-search input').hide();
+		},1);
+		$('#js-open').show(20);
 		$('#js-search').css('width', '10%');
 	});
 });
