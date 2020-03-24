@@ -17,6 +17,20 @@ $(function () {
 	$('#js-toggle-menu').on('click', function () {
 		$('#js-main-menu').slideToggle();
 	});
+
+	$(window).on('scroll', function () {
+		let windowScrollTop = $(this).scrollTop();
+		$('#js-intro').css("transform", "translateY("+ windowScrollTop / 4 +"px)");
+	});
+
+	$('#js-posts').magnificPopup({
+		delegate: '.posts__link', // the selector for gallery item
+		type: 'image',
+		gallery: {
+			enabled:true
+		}
+	});
+
 });
 
 
