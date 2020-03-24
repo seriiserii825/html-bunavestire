@@ -61,3 +61,41 @@ a {
   background: #f2f2f2;
   z-index: 1;
 }
+.to-top {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $purple;
+  transition: all .4s;
+  &:hover {
+    color: $tundora;
+	&::before,
+    &::after {
+      top: -30px;
+    }
+  }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: $purple;
+    z-index: 100;
+    transition: all .4s;
+  }
+  &::before {
+    left: 50%;
+    transform-origin: left;
+    transform: translateX(-50%) rotate(135deg);
+  }
+  &::after {
+    right: 50%;
+    transform-origin: right;
+    transform: translateX(-50%) rotate(225deg);
+  }
+}

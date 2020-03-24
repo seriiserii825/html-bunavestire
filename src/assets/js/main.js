@@ -31,6 +31,15 @@ $(function () {
 		}
 	});
 
+	let toTop = function () {
+		$('#js-to-top').on('click', function () {
+			$('html, body').animate({
+				scrollTop: 0
+			}, 1000);
+		});
+	};
+	toTop();
+
 });
 
 
