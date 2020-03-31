@@ -1,0 +1,74 @@
+extends template
+
+block css
+    link(rel="stylesheet" type="text/css" href="assets/libs/magnific-popup/magnific-popup.css")
+    link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+    title Main
+
+block content
+    include ../includes/mixins
+    .hidden
+        include ../../../build/assets/i/svg/inline/sprite.svg
+
+    include ../includes/intro-prayers
+    include ../includes/header
+    main.main
+        .container
+            .main__wrap
+                .main__content
+                    .posts#js-posts
+                        .posts__item
+                            a.posts__link(href="assets/i/serafim_sarov.jpg")
+                                img.posts__img(style="background-image: url('assets/i/serafim_sarov_small.jpg')")
+                            a.posts__tag(href="#") Alte video
+                            h2.posts__title
+                                a(href="#") Преподобный Серафим Саровский
+                            time 28.12.2018
+                        .posts__item
+                            a.posts__link(href="assets/i/ioan_cronstatd.jpg")
+                                img.posts__img(style="background-image: url('assets/i/ioan_cronstatd_small.jpg')")
+                            a.posts__tag(href="#") Alte video
+                            h2.posts__title
+                                a(href="#") Всероссийский Батюшка. Отец Иоанн Кронштадтский
+                            time 28.12.2018
+                        .posts__item
+                            a.posts__link(href="assets/i/serafim_sarov.jpg")
+                                img.posts__img(style="background-image: url('assets/i/serafim_sarov_small.jpg')")
+                            a.posts__tag(href="#") Alte video
+                            h2.posts__title
+                                a(href="#") Преподобный Серафим Саровский
+                            time 28.12.2018
+                        .posts__item
+                            a.posts__link(href="assets/i/ioan_cronstatd.jpg")
+                                img.posts__img(style="background-image: url('assets/i/ioan_cronstatd_small.jpg')")
+                            a.posts__tag(href="#") Alte video
+                            h2.posts__title
+                                a(href="#") Всероссийский Батюшка. Отец Иоанн Кронштадтский
+                            time 28.12.2018
+
+                aside.sidebar
+                    .widget.widget-gallery#js-widget-gallery
+                        h3.widget__title Imaginile bisericii
+                        ul.gallery-list
+                            li
+                                a(href="assets/i/biserica2018.jpg")
+                                    img(src="assets/i/biserica2018.jpg" alt="")
+                            li
+                                a(href="assets/i/biserica-veche-2.jpg")
+                                    img(src="assets/i/biserica-veche-2.jpg" alt="")
+                            li
+                                a(href="assets/i/biserica-veche.jpg")
+                                    img(src="assets/i/biserica-veche.jpg" alt="")
+                            li
+                                a(href="assets/i/biserica2010.jpg")
+                                    img(src="assets/i/biserica2010.jpg" alt="")
+
+    footer.main-footer
+        .container
+            a.to-top#js-to-top(href="#js-top") Вернуться наверх
+    include ../includes/scripts/ie-scripts
+
+block scripts
+    script(src="assets/libs/magnific-popup/jquery.magnific-popup.min.js")

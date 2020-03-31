@@ -235,9 +235,24 @@ a {
 
 .intro {
   position: relative;
-  height: 100vh;
+  height: 30vh;
   background-size: cover;
   background-position: center;
+}
+
+.intro--full {
+  height: 100vh;
+}
+
+.intro__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  color: gold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .header-logo {
@@ -573,6 +588,12 @@ a {
   display: block;
   height: 78px;
   overflow: hidden;
+  transition: all .3s;
+  opacity: .8;
+}
+
+.widget-gallery .gallery-list a:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=my.css.map */

@@ -32,6 +32,11 @@
 	  display: block;
 	  height: 78px;
 	  overflow: hidden;
+	  transition: all .3s;
+	  opacity: .8;
+	  &:hover {
+		opacity: 1;
+	  }
 	}
   }
 }
