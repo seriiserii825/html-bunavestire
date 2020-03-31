@@ -34,9 +34,35 @@
 	  overflow: hidden;
 	  transition: all .3s;
 	  opacity: .8;
+	  
 	  &:hover {
 		opacity: 1;
 	  }
 	}
   }
+}
+
+.widget-schedule {
+  &__list {
+	li {
+	  margin-bottom: 10px;
+	}
+  }
+  li {
+	border: 1px solid #ccc;
+  }
+  &__item {
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	&:last-of-type {
+	  border-bottom: none;
+	}
+  }
+  
+  &__date {
+	display: flex;
+	justify-content: space-between;
+  }
+  
 }

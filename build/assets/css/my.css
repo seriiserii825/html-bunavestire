@@ -600,4 +600,27 @@ a {
   opacity: 1;
 }
 
+.widget-schedule__list li {
+  margin-bottom: 10px;
+}
+
+.widget-schedule li {
+  border: 1px solid #ccc;
+}
+
+.widget-schedule__item {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.widget-schedule__item:last-of-type {
+  border-bottom: none;
+}
+
+.widget-schedule__date {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=my.css.map */
