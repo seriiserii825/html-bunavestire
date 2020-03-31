@@ -5,62 +5,78 @@
   padding: 30px;
   background: white;
   @include box-shaddow;
+  
   &__item {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
   }
+  
   &__tag {
-    display: block;
-    padding-top: 20px;
-    font-size: 14px;
-    text-align: center;
-    color: $purple;
-    transition: all .3s;
-    &:hover {
-      color: $tundora;
-    }
+	display: block;
+	padding-top: 20px;
+	font-size: 14px;
+	text-align: center;
+	color: $purple;
+	transition: all .3s;
+	
+	&:hover {
+	  color: $tundora;
+	}
   }
+  
   &__link {
-    display: block;
-    height: 380px;
-    overflow: hidden;
-    &:hover {
-      .posts__img {
-        transform: scale(1.1);
-      }
-    }
+	display: block;
+	height: 380px;
+	overflow: hidden;
+	
+	&:hover {
+	  .posts__img {
+		transform: scale(1.1);
+	  }
+	}
   }
+  
   &__img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    transition: all .4s;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	transition: all .4s;
   }
+  
   &__tag {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1.7px;
-    text-transform: uppercase;
-    color: $purple;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1.7px;
+	text-transform: uppercase;
+	color: $purple;
   }
+  
   &__title {
-    margin-bottom: 20px;
-    height: 60px;
-    a {
-      display: block;
-      padding-top: 20px;
-      font-size: 16px;
-      line-height: 1.2;
-      letter-spacing: 1px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #030303;
-      transition: all .3s;
-      &:hover {
-        color: $tundora;
-      }
-    }
+	margin-bottom: 20px;
+	height: 60px;
+	
+	a {
+	  display: block;
+	  padding-top: 20px;
+	  font-size: 16px;
+	  line-height: 1.2;
+	  letter-spacing: 1px;
+	  text-align: center;
+	  text-transform: uppercase;
+	  color: #030303;
+	  transition: all .3s;
+	  
+	  &:hover {
+		color: $tundora;
+	  }
+	}
   }
+  
+  &__short-text {
+	line-height: 1.6;
+	color: $gray;
+  }
+  
   time {
-    float: right;
+	float: right;
   }
 }
