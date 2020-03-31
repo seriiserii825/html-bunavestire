@@ -41,6 +41,17 @@ $(function () {
 	};
 	imagePopup();
 
+	let widgetGallery = function(){
+		$('#js-widget-gallery').magnificPopup({
+			delegate: 'a', // the selector for gallery item
+			type: 'image',
+			gallery: {
+				enabled:true
+			}
+		});
+	}
+	widgetGallery();
+
 	let toTop = function () {
 		$('#js-to-top').on('click', function () {
 			$('html, body').animate({
