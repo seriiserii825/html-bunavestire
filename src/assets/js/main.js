@@ -27,8 +27,7 @@ $(function () {
 
 	$(window).on('scroll', function () {
 		let windowScrollTop = $(this).scrollTop();
-		$('#js-intro').css("transform", "translateY("+ windowScrollTop / 2 +"px)");
-	});
+		$('#js-intro').css("transform", "translateY("+ windowScrollTop / 2 +"px)");});
 
 	let imagePopup = function(){
 		$('#js-posts').magnificPopup({

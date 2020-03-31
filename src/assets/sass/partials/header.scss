@@ -2,7 +2,7 @@
   position: relative;
   padding: 0 15px;
   background: white;
-  box-shadow: 0 4px 8px rgba(0,0,0,.1);
+  @include box-shaddow;
   z-index: 2;
   &__wrap {
     height: 60px;

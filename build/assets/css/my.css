@@ -230,7 +230,7 @@ a {
 .main__wrap {
   display: grid;
   grid-template-columns: 1fr 300px;
-  grid-gap: 30px;
+  grid-gap: 15px;
 }
 
 .intro {
@@ -466,6 +466,9 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  padding: 30px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .posts__item {
@@ -511,6 +514,11 @@ a {
   color: #8500b2;
 }
 
+.posts__title {
+  margin-bottom: 20px;
+  height: 60px;
+}
+
 .posts__title a {
   display: block;
   padding-top: 20px;
@@ -527,10 +535,15 @@ a {
   color: #464646;
 }
 
+.posts time {
+  float: right;
+}
+
 .widget {
   margin-bottom: 40px;
   padding: 20px;
   background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .widget__title {

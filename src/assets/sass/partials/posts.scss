@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  padding: 30px;
+  background: white;
+  @include box-shaddow;
   &__item {
     margin-bottom: 30px;
   }
@@ -40,6 +43,8 @@
     color: $purple;
   }
   &__title {
+    margin-bottom: 20px;
+    height: 60px;
     a {
       display: block;
       padding-top: 20px;
@@ -54,5 +59,8 @@
         color: $tundora;
       }
     }
+  }
+  time {
+    float: right;
   }
 }
